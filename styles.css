@@ -1,0 +1,154 @@
+/* GENERAL */
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* NAV */
+.nav {
+  background: #000;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid #333;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo img {
+  width: 120px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+/* HERO */
+.hero img {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: block;
+}
+
+/* ABOUT */
+.about {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.members {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+/* DISCOGRAPHY */
+.discography {
+  padding: 50px 20px;
+}
+
+.disc-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.disc-item img {
+  width: 220px;
+}
+
+.disc-item h3 {
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 50px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.grid img {
+  width: 100%;
+}
+
+/* VIDEO */
+.video-wrap {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.poster {
+  width: 100%;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .disc-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
