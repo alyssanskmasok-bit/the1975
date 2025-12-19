@@ -113,11 +113,54 @@ body {
  padding: 0.4rem 1rem;
 }
 /* FOOTER */
-.footer {
- text-align: center;
- padding: 2rem;
- border-top: 1px solid #000;
+..footer {
+
+  border-top: 1px solid #000;
+
+  padding: 1.5rem;
+
 }
+
+.footer-content {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr auto auto auto;
+
+  align-items: center;
+
+  gap: 2rem;
+
+}
+
+.footer-item {
+
+  font-size: 0.9rem;
+
+  text-decoration: none;
+
+  color: #000;
+
+  white-space: nowrap;
+
+}
+
+.footer-left {
+
+  justify-self: start;
+
+}
+
+.footer-right {
+
+  justify-self: end;
+
+}
+ 
 /* RESPONSIVE */
 @media (max-width: 480px) {
  .nav {
@@ -133,6 +176,15 @@ body {
     gap: 1rem;
 
   }
+  @media (max-width: 480px) {
+ .footer-content {
+   grid-template-columns: 1fr;
+   gap: 0.8rem;
+ }
+ .footer-item {
+   justify-self: start;
+ }
+}
 
   .contact {
 
