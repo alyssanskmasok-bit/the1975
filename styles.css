@@ -73,6 +73,24 @@ body {
  width: 100%;
  display: block;
 }
+.albums {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+ gap: 2rem;
+ margin-top: 2rem;
+}
+.album {
+ text-align: center;
+}
+.album img {
+ width: 100%;
+ display: block;
+ border: 1px solid #000;
+}
+.album p {
+ margin-top: 0.5rem;
+ font-weight: bold;
+}
 /* VIDEO */
 .video-wrap {
  position: relative;
