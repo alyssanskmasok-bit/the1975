@@ -5,10 +5,11 @@
 }
 body {
  font-family: Arial, Helvetica, sans-serif;
- background-color: #ffffff;
- color: #000000;
+ background-color: #fff;
+ color: #000;
  line-height: 1.6;
 }
+/* NAV */
 .header {
  border-bottom: 1px solid #000;
 }
@@ -17,8 +18,8 @@ body {
  margin: auto;
  padding: 1rem;
  display: flex;
- align-items: center;
  justify-content: space-between;
+ align-items: center;
 }
 .logo img {
  height: 40px;
@@ -33,6 +34,7 @@ body {
  color: #000;
  font-weight: bold;
 }
+/* HERO */
 .hero {
  height: 80vh;
  background: url("assets/hero.webp") center/cover no-repeat;
@@ -41,14 +43,15 @@ body {
  justify-content: center;
 }
 .hero-content {
- text-align: center;
- background: rgba(255,255,255,0.8);
+ background: rgba(255,255,255,0.85);
  padding: 2rem;
  border: 1px solid #000;
+ text-align: center;
 }
 .hero-content h1 {
  font-size: 3rem;
 }
+/* SECTIONS */
 .section {
  max-width: 900px;
  margin: auto;
@@ -60,6 +63,7 @@ body {
 .alt {
  background-color: #f5f5f5;
 }
+/* GALLERY */
 .gallery {
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -69,15 +73,34 @@ body {
  width: 100%;
  display: block;
 }
-video {
- width: 100%;
- margin-top: 1rem;
+/* VIDEO */
+.video-wrap {
+ position: relative;
+ max-width: 800px;
+ margin: 1.5rem auto 0;
+ cursor: pointer;
 }
+.video-wrap img {
+ width: 100%;
+ display: block;
+}
+.play-btn {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-size: 3rem;
+ background: rgba(255,255,255,0.85);
+ border-radius: 50%;
+ padding: 0.4rem 1rem;
+}
+/* FOOTER */
 .footer {
  text-align: center;
  padding: 2rem;
  border-top: 1px solid #000;
 }
+/* RESPONSIVE */
 @media (max-width: 480px) {
  .nav {
    flex-direction: column;
