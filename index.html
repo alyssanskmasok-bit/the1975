@@ -1,93 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The 1975 — Página Oficial Minimalista</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 1975</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KRQ3VCF9T1"></script>
+<script>
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(){dataLayer.push(arguments);}
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-KRQ3VCF9T1');
+</script>
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
+<header class="header">
 <nav class="nav">
-  <div class="nav-container">
-    <a href="#inicio" class="nav-logo">
-      <img src="assets/logo.jpg" alt="The 1975 Logo">
-    </a>
-
-    <ul class="nav-links">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#banda">La Banda</a></li>
-      <li><a href="#discografia">Discografía</a></li>
-      <li><a href="#galeria">Galería</a></li>
-      <li><a href="#video">Video</a></li>
-    </ul>
-  </div>
+<div class="logo">
+<img src="assets/logo.jpg" alt="The 1975 logo">
+</div>
+<ul class="nav-links">
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#banda">La banda</a></li>
+<li><a href="#musica">Música</a></li>
+<li><a href="#galeria">Galería</a></li>
+<li><a href="#video">Video</a></li>
+</ul>
 </nav>
-
-<header id="inicio"></header>
-
-<section class="hero">
-  <picture>
-    <source srcset="assets/hero.webp" type="image/webp">
-    <img src="assets/hero.jpg" alt="The 1975 Hero" loading="lazy">
-  </picture>
+</header>
+<section id="inicio" class="hero">
+<img src="assets/hero.webp" alt="The 1975 hero image">
+<div class="hero-text">
+<h1>The 1975</h1>
+<p>Banda británica de pop rock y alternative</p>
+</div>
 </section>
+<section id="banda" class="section">
+<h2>¿Quiénes son The 1975?</h2>
+<p>
 
-<section class="about" id="banda">
-  <h2>¿Quiénes son The 1975?</h2>
-  <p>
-    The 1975 es una banda británica de pop rock e indie formada en Manchester.
-    Su estilo combina rock alternativo, electrónica y pop, acompañado de una
-    estética minimalista en blanco y negro.
-  </p>
+      The 1975 es una banda originaria de Manchester, Inglaterra, formada en 2002.
 
-  <ul class="members">
-    <li><strong>Matty Healy</strong> — Voz</li>
-    <li><strong>Adam Hann</strong> — Guitarra</li>
-    <li><strong>Ross MacDonald</strong> — Bajo</li>
-    <li><strong>George Daniel</strong> — Batería / Producción</li>
-  </ul>
+      Su música mezcla pop, rock alternativo, synth-pop y elementos electrónicos.
+
+      La banda es conocida por su estética minimalista y letras introspectivas.
+</p>
 </section>
+<section id="musica" class="section">
+<h2>Estilo musical</h2>
+<p>
 
-<section class="discography" id="discografia">
-  <h2>Discografía</h2>
+      Su sonido combina guitarras limpias, sintetizadores y una fuerte influencia
 
-  <div class="disc-cards">
-    <div class="disc-item">
-      <img src="assets/album1.jpg" alt="The 1975 2013" loading="lazy">
-      <h3>The 1975 (2013)</h3>
-    </div>
-
-    <div class="disc-item">
-      <img src="assets/album2.jpg" alt="ILIWYS" loading="lazy">
-      <h3>I Like It When You Sleep (2016)</h3>
-    </div>
-
-    <div class="disc-item">
-      <img src="assets/band.jpg" alt="Notes" loading="lazy">
-      <h3>Notes on a Conditional Form (2020)</h3>
-    </div>
-  </div>
+      de la música de los años 80, abordando temas como el amor, la identidad y la sociedad.
+</p>
 </section>
-
-<section class="gallery" id="galeria">
-  <h2>Galería</h2>
-  <div class="grid">
-    <img src="assets/album1.jpg" alt="Galería 1" loading="lazy">
-    <img src="assets/album2.jpg" alt="Galería 2" loading="lazy">
-    <img src="assets/band.jpg" alt="Galería 3" loading="lazy">
-  </div>
+<section id="galeria" class="section gallery">
+<h2>Galería</h2>
+<div class="images">
+<img src="assets/album1.jpg" alt="Álbum The 1975">
+<img src="assets/album2.jpg" alt="Álbum The 1975">
+<img src="assets/band.jpg" alt="The 1975 band">
+</div>
 </section>
+<section id="video" class="section">
+<h2>Video</h2>
+<video controls poster="assets/video-poster.jpg">
+<source src="assets/the1975-video.mp4" type="video/mp4">
 
-<section class="video" id="video">
-  <h2>Video</h2>
-  <div class="video-wrap" data-youtube-id="gWDR9-FaBlU">
-    <img src="assets/video-poster.jpg" class="poster" loading="lazy">
-    <button class="play">▶</button>
-  </div>
+</video>
 </section>
-
+<footer class="footer">
+<p>© 2025 The 1975 Fan Page</p>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
+ 
