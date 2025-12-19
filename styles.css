@@ -1,154 +1,89 @@
-/* GENERAL */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
 body {
-  margin: 0;
-  background: #000;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: #ffffff;
+ color: #000000;
+ line-height: 1.6;
 }
-
-/* NAV */
+.header {
+ border-bottom: 1px solid #000;
+}
 .nav {
-  background: #000;
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  border-bottom: 1px solid #333;
+ max-width: 1100px;
+ margin: auto;
+ padding: 1rem;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
 }
-
-.nav-container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.logo img {
+ height: 40px;
 }
-
-.nav-logo img {
-  width: 120px;
-  height: auto;
-}
-
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
+ list-style: none;
+ display: flex;
+ gap: 1.5rem;
 }
-
 .nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 15px;
-  letter-spacing: 1px;
-  font-weight: 300;
+ text-decoration: none;
+ color: #000;
+ font-weight: bold;
 }
-
-/* HERO */
-.hero img {
-  width: 100%;
-  max-width: 900px;
-  margin: auto;
-  display: block;
+.hero {
+ height: 80vh;
+ background: url("assets/hero.webp") center/cover no-repeat;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
-
-/* ABOUT */
-.about {
-  max-width: 700px;
-  margin: 50px auto;
-  padding: 0 20px;
+.hero-content {
+ text-align: center;
+ background: rgba(255,255,255,0.8);
+ padding: 2rem;
+ border: 1px solid #000;
 }
-
-.members {
-  list-style: none;
-  padding: 0;
-  line-height: 1.8;
+.hero-content h1 {
+ font-size: 3rem;
 }
-
-/* DISCOGRAPHY */
-.discography {
-  padding: 50px 20px;
+.section {
+ max-width: 900px;
+ margin: auto;
+ padding: 4rem 1.5rem;
 }
-
-.disc-cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+.section h2 {
+ margin-bottom: 1rem;
 }
-
-.disc-item img {
-  width: 220px;
+.alt {
+ background-color: #f5f5f5;
 }
-
-.disc-item h3 {
-  margin-top: 10px;
-  font-weight: 300;
-}
-
-/* GALLERY */
 .gallery {
-  padding: 50px 20px;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 1rem;
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  max-width: 900px;
-  margin: auto;
+.gallery img {
+ width: 100%;
+ display: block;
 }
-
-.grid img {
-  width: 100%;
+video {
+ width: 100%;
+ margin-top: 1rem;
 }
-
-/* VIDEO */
-.video-wrap {
-  position: relative;
-  max-width: 800px;
-  margin: auto;
-  cursor: pointer;
+.footer {
+ text-align: center;
+ padding: 2rem;
+ border-top: 1px solid #000;
 }
-
-.poster {
-  width: 100%;
-}
-
-.play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
-  background: white;
-  color: black;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-}
-
-/* RESPONSIVE */
 @media (max-width: 480px) {
-  .nav-container {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .disc-cards {
-    flex-direction: column;
-    align-items: center;
-  }
+ .nav {
+   flex-direction: column;
+   gap: 1rem;
+ }
+ .hero-content h1 {
+   font-size: 2rem;
+ }
 }
